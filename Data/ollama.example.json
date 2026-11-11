@@ -1,0 +1,7 @@
+{
+  "temperature": 0.3,
+  "contextLength": 4096,
+  "model": "qwen2.5:3b",
+  "endpoint": "http://localhost:11434/api/chat",
+  "think": null
+}

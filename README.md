@@ -2,6 +2,25 @@
 
 A fully local C# / .NET 10 console application for experimenting with configurable AI personalities through Ollama. No additional NuGet dependencies or cloud account are required.
 
+## What this solution does
+
+PersonalitySimulator is a local console app for chatting with Nova, an experimental AI personality powered by Ollama. Its purpose is to explore how closely an AI can reflect a person's conversational style and use reviewed memories over time.
+
+Currently, it:
+
+- Loads a personality and approved user style descriptions from JSON.
+- Keeps conversation history during a session.
+- Saves facts when you explicitly use `/remember`.
+- Creates journal drafts that you review before saving.
+- Supports style switching, conversation reset, local time, and arithmetic.
+- Handles connection errors and checks some problematic model replies.
+
+The application does not retrain itself or automatically learn your personality. It supplies profiles, saved memories, and conversation context to an existing local language model. Its imitation is still inconsistent, and response checks do not guarantee accurate or natural replies.
+
+Multiple personalities, relationship-aware conversations, SQLite memory, and historical personality snapshots are future features.
+
+The GitHub repository contains safe example profiles. Personal profiles and saved memories stay local and are excluded from Git. GitHub stores the code; it does not run the model or receive conversations through this application.
+
 ## Setup
 
 1. Install the .NET 10 SDK and Ollama.
